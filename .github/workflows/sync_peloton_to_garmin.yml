@@ -9,8 +9,8 @@ on:
       workoutsToDownload:
         type: number
         default: "5"
-  schedule:
-    - cron: '0 1 * * *'
+#  schedule:
+#    - cron: '0 1 * * *'
 
 jobs:
   sync:
@@ -50,7 +50,7 @@ jobs:
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
-            "ExcludeWorkoutTypes": [ "meditation" ],
+            "ExcludeWorkoutTypes": [ "meditation", "Stretching", "OutdoorRunning", "OutdoorWalking" ],
           },
           "Garmin": {
             "Upload": true,
