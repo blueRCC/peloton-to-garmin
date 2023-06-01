@@ -3,14 +3,9 @@
 
 ## Features
 
-- [#406] WebUI - New page to view more detailed progress towards Annual Challenge Badges
+- [#497] Add support for Rowing Bootcamp
+- More exercise mappings
+	- [#495] Open Lateral Raise, Pike Push Up, Dolphin
 
 ## Fixes
-
-- [#404] Fixed where outdoor Just walk/Just run could be missing GPS data on Garmin Connect
-- [#411] WebUI - Fixed issue where custom DeviceInfo file path could not be saved
-- [#414] Fixed calories missing on Garmin Connect when provided by Apple Watch
-
-## Changes
-
-- [#402] [housekeeping] Dependency bumps
+- `All converters were skipped.` - confusing log message when no workouts needed to be synced
